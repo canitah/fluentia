@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fluentia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="container mainNav flex">
+        <a href="#" class="logo">
+          <img src="images/fluentiaLogo.jpeg" alt="" />
+        </a>
+        <div class="navLinks" id="nav-Links">
+          <ul class="flex">
+            <li><a href="#" class="hoverLinks">Home</a></li>
+            <li><a href="#" class="hoverLinks">About Us</a></li>
+            <li><a href="#" class="hoverLinks">Contact Us</a></li>
+          </ul>
+        </div>
+        <a href="#" class="navToggle hoverLinks" id="navToggle">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Talk To Us Section -->
+    <section id="talkToUs">
+      <div class="container talkToUsContainer flex">
+        <div class="flex headerDiv">
+          <h2>Talk To Us</h2>
+          <p>
+            Feel free to call, email, or hit us up on our social media accounts.
+          </p>
+          <a href="#" class="primaryButton">CONTACT US</a>
+        </div>
+        <div class="flex bottomDiv">
+          <div class="linkDiv emailPhoneDiv flex">
+            <p class="smallBoldText linkHeader">EMAIL</p>
+            <p class="linkText">support@fluentia0523.com</p>
+          </div>
+          <div class="linkDiv emailPhoneDiv flex">
+            <p class="smallBoldText linkHeader">PHONE</p>
+            <p class="linkText">(123) 456-7890</p>
+          </div>
+          <div class="linkDiv flex">
+            <p class="smallBoldText linkHeader flex">SOCIAL</p>
+            <div class="linkText socialLinks flex">
+              <a href="#" class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="social">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter">
+      <div class="container newsletterContainer flex">
+        <div class="leftDiv flex">
+          <h3>Subscribe to our newsletter</h3>
+          <p class="newsletterText">
+            <span>Sign up</span> to hear from us about specials, sales, and
+            events.
+          </p>
+          <a href="#" class="secondaryButton">SIGN UP</a>
+        </div>
+        <div class="rightDiv"></div>
+      </div>
+    </section>
+
+    <!-- Contact Us Form Section -->
+    <section id="contactUs">
+      <div class="container flex contactUsContainer">
+        <div class="contactUsTextDiv flex">
+          <h2>
+            Let us <br />
+            help you
+          </h2>
+          <p>
+            Reach out for an <br />
+            exploratory conversation.
+          </p>
+        </div>
+        <div class="contactUsFormDiv flex">
+          <form action="#" class="flex">
+            <input type="text" placeholder="Name *" required />
+            <input type="email" placeholder="Email *" required />
+            <textarea
+              name="meassage"
+              cols="30"
+              rows="10"
+              placeholder="Message *"
+              required
+            ></textarea>
+            <a href="#" class="secondaryButton">SEND</a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container flex footerContainer">
+        <div class="footerText">
+          <p>COPYRIGHT &copy; 2023 FLUENTIA - ALL RIGHTS RESERVED</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const toggleButton = document.getElementById("navToggle");
+      const navLinks = document.getElementById("nav-Links");
+      toggleButton.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

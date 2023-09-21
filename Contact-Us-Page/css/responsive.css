@@ -1,0 +1,107 @@
+@media screen and (max-width: 991px) {
+  .newsletterContainer {
+    padding-inline: 30px !important;
+  }
+  .contactUsContainer {
+    gap: 2rem;
+  }
+  .contactUsContainer .contactUsTextDiv {
+    min-width: 300px;
+  }
+
+  .contactUsFormDiv form {
+    min-width: 420px;
+  }
+}
+
+@media (max-width: 810px) {
+  .talkToUsContainer .bottomDiv {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .newsletterContainer .leftDiv {
+    padding-block: 4rem;
+  }
+  .newsletterContainer .rightDiv {
+    height: 400px;
+  }
+  .newsletterContainer .leftDiv,
+  .newsletterContainer .rightDiv {
+    flex: 100%;
+  }
+  .contactUsContainer {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    text-align: center;
+  }
+  .contactUsFormDiv form {
+    min-width: 490px;
+  }
+  .footerContainer {
+    padding-block: 1rem;
+  }
+  .footerContainer .footerText p {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  :root {
+    --padding-inline-section: 25px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .smallBoldText {
+    font-size: 1rem;
+  }
+  .primaryButton {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+  }
+
+  .secondaryButton {
+    font-size: 1.25rem;
+  }
+
+  .newsletterContainer .leftDiv .newsletterText {
+    font-size: 1.6rem;
+  }
+  .newsletterContainer .leftDiv {
+    padding: 2rem;
+  }
+
+  .newsletterContainer .rightDiv {
+    height: 300px;
+  }
+  .contactUsContainer {
+    padding-inline: 25px;
+  }
+  .contactUsFormDiv form {
+    min-width: 300px;
+  }
+
+  .contactUsFormDiv form input,
+  textarea {
+    font-size: 1.2rem;
+  }
+  .contactUsFormDiv form textarea {
+    height: 300px;
+  }
+  .footerContainer {
+    padding-block: 1rem;
+  }
+  .footerContainer .footerText p {
+    font-size: 1.25rem;
+  }
+}

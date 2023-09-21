@@ -1,0 +1,42 @@
+.flex {
+  display: flex;
+}
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+  overflow: hidden;
+}
+.primaryButton {
+  background: none;
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white !important;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.4s ease-out;
+}
+.primaryButton:hover {
+  background-color: white;
+  color: var(--purple) !important;
+}
+.secondaryButton {
+  width: max-content;
+  background-color: white;
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  border: 1px solid var(--grey);
+  border-radius: 6px;
+  color: var(--purple) !important;
+  padding: 10px 24px;
+  transition: 0.2s ease-out;
+}
+.secondaryButton:hover {
+  background: none;
+  border-color: var(--grey);
+  color: white !important;
+}

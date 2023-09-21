@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@500;600;700&display=swap");
+:root {
+  --purple: #8c52ff;
+  --blue: #6e00ff;
+  --grey: #eeede9;
+  --padding-inline-section: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+}
+body {
+  color: white;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+p {
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.smallBoldText {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+
+/* Navbar Styling */
+nav {
+  background-color: white;
+}
+.mainNav {
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: initial !important;
+}
+
+.logo img {
+  width: 80px;
+}
+.navLinks {
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  background-color: white;
+  height: 100vh;
+  padding: 3rem;
+  transition: 0.5s ease-in-out;
+}
+.navLinks.active {
+  left: 0;
+}
+.navLinks ul {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hoverLinks {
+  color: var(--purple);
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.2s ease-out;
+}
+.hoverLinks:hover {
+  font-weight: 600;
+  color: var(--blue);
+}
+
+/* Top Section Styling */
+#talkToUs {
+  background-color: var(--purple);
+}
+.talkToUsContainer {
+  flex-direction: column;
+  padding-block: 3rem;
+  min-height: 600px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.talkToUsContainer .headerDiv {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.talkToUsContainer .bottomDiv {
+  margin-top: 5rem;
+  text-align: center;
+  gap: 6rem;
+  justify-content: center;
+}
+.talkToUsContainer .bottomDiv .linkDiv {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.talkToUsContainer .bottomDiv .emailPhoneDiv {
+  gap: 20px;
+}
+.linkDiv .linkHeader {
+  font-family: "Montserrat", sans-serif;
+}
+.linkDiv .linkText {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.linkDiv .socialLinks {
+  gap: 12px;
+}
+.social i {
+  border-radius: 50%;
+  background-color: white;
+  color: var(--purple);
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.social i:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Newsletter Section */
+#newsletter {
+  background-color: var(--grey);
+}
+.newsletterContainer {
+  padding-block: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.newsletterContainer .leftDiv {
+  background: rgb(140, 82, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(140, 82, 255, 1) 0%,
+    rgba(110, 0, 255, 0.9) 35%
+  );
+  flex-direction: column;
+  padding-inline: 2rem;
+  padding-block: 3rem;
+  gap: 2rem;
+  flex: 50%;
+}
+.newsletterContainer .leftDiv .newsletterText {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.newsletterText span {
+  color: #4dd1f9;
+}
+.newsletterContainer .rightDiv {
+  height: 490px;
+  background: url("/Contact-Us-Page/images/newsletter.png") no-repeat center;
+  background-size: cover;
+  flex: 50%;
+}
+
+/* Contact Us Form Section */
+#contactUs {
+  background-image: linear-gradient(
+      rgba(140, 82, 255, 0.7) 0%,
+      rgba(110, 0, 255, 0.7)
+    ),
+    url("/Contact-Us-Page/images/customerForm.png");
+  background-size: cover;
+  background-position: center;
+}
+.contactUsContainer {
+  padding-block: 3rem;
+  justify-content: space-evenly;
+  gap: 5rem;
+}
+.contactUsContainer .contactUsTextDiv {
+  min-width: 300px;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contactUsFormDiv form {
+  flex-direction: column;
+  min-width: 500px;
+  gap: 2rem;
+}
+.contactUsFormDiv form input,
+textarea {
+  display: block;
+  border: none;
+  border-bottom: 3px solid white;
+  background: none;
+  height: 75px;
+  color: white;
+  padding: 7px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  resize: none;
+}
+.contactUsFormDiv form textarea {
+  height: 300px;
+}
+
+.contactUsFormDiv form input::placeholder,
+.contactUsFormDiv form textarea::placeholder {
+  color: white;
+}
+
+.contactUsFormDiv form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Footer Section */
+
+.footerContainer {
+  color: var(--purple);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-block: 2rem;
+}
+
+.footerContainer .footerText p {
+  font-weight: 600;
+}
