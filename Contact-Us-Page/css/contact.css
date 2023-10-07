@@ -150,7 +150,6 @@ nav {
   flex-wrap: wrap;
 }
 .newsletterContainer .leftDiv {
-  background: rgb(140, 82, 255);
   background: linear-gradient(
     90deg,
     rgba(140, 82, 255, 1) 0%,
